@@ -1,173 +1,288 @@
-@media screen and (max-width: 1244px){
-    #about{
+/* mediaqueries.css - Optimized Version */
+
+/* Large Laptops & Desktops (1200px and above) */
+@media screen and (max-width: 1244px) {
+    #about {
         height: fit-content;
         padding-bottom: 4rem;
     }
-    #about .section__pic-container{
+    
+    #about .section__pic-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+    
     .about-pic {
         width: 300px;
         height: 300px;
-        margin: auto;
-        margin-top: 2rem;
-        margin-left: 2rem;
+        margin: 2rem auto;
     }
+    
     .about-containers {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        flex: 1;
         justify-content: center;
         align-items: center;
         margin-top: 2rem;
         padding: 0 2rem;
         gap: 2rem;
     }
+    
     .about-containers .details-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: 1rem 2rem;
         min-width: 16rem;
     }
+    
     #about .text-container {
         padding: 0 2rem;
     }
-
-}
-@media screen and (max-width: 1140px){
     
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/* Tablets & Small Laptops (1140px and below) */
+@media screen and (max-width: 1140px) {
     #desktop-nav .nav-links {
         display: none;
     }
-    #desktop-nav{
+    
+    #desktop-nav {
         margin: 0;
         left: 0;
     }
-    #hamburger-nav{
+    
+    #hamburger-nav {
         display: flex;
         right: 0;
         padding-right: 5%;
     }
+    
     #skills, .skills-details-container {
         padding-bottom: 3rem;
     }
-    #profile{
+    
+    #profile {
         height: auto;
         padding-top: 7rem;
-        padding-bottom: 2rem
+        padding-bottom: 2rem;
+        flex-direction: column;
+        text-align: center;
     }
+    
     #profile, .section-container {
         display: block;
     }
-
+    
     section, .section-container {
         height: fit-content;
-        justify-content: center;
     }
+    
     section {
         padding: 5%;
     }
+    
     .home-pic {
         width: 275px;
         height: 275px;
-        margin: auto;
+        margin: 0 auto 2rem;
     }
+    
     .about-pic {
         width: 300px;
         height: 300px;
-        margin: auto;
-        margin-top: 2rem;
-
+        margin: 2rem auto;
     }
-    .intro{
-        width:100%;
+    
+    .intro {
+        width: 100%;
     }
-    .hamburger-nav{
-        right: 0;
-    }
-
-
-    #skills{
+    
+    #skills {
         height: fit-content;
     }
-
-    .skills-details-container{
+    
+    .skills-details-container {
         padding: 0 8%;
     }
-
-    .sk-details-container{
+    
+    .sk-details-container {
         margin: 0;
     }
+    
     #contact {
         height: fit-content;
+        padding: 2rem 0;
     }
-    #contact .title{
+    
+    #contact .title {
         margin-bottom: 2rem;
     }
-    .contact-info-upper-container{
+    
+    .contact-info-upper-container {
         width: fit-content;
         display: flex;
         flex-direction: column;
         border-radius: 2rem;
-        margin: 0;
-        margin-bottom: 1rem;
-        padding: 0;
-        padding-bottom: 0.2rem;
+        margin: 0 auto 1rem;
+        padding: 0.5rem 1rem;
     }
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    
+    footer {
+        padding: 1rem 0;
     }
-
-    footer .nav-links-container, .nav-links {
-        padding: 0;
-        margin: auto;
-    }
-    footer nav{
-        padding: 0;
-    }
-
-    #all-projects{
+    
+    #all-projects {
         width: 100%;
         margin: 0;
     }
-    .work-list{
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         padding: 0 5%;
+        margin: 2rem 0;
     }
-
 }
 
-@media screen and (max-width: 825px){
+/* Medium Tablets (825px and below) */
+@media screen and (max-width: 825px) {
     .about-containers .details-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: 1rem;
         max-width: 15rem;
+        min-width: 12rem;
+    }
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .section__text__p1 {
+        font-size: 1.2rem;
+    }
+    
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 
-@media screen and (max-width: 620px){
-    .work-list{
-        margin: 0;
-        grid-template-columns: auto;
+/* Small Tablets & Large Phones (620px and below) */
+@media screen and (max-width: 620px) {
+    .work-list {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+        gap: 20px;
     }
-    section{
-        width: auto;
-        margin-left: 0;
-        margin-right: 0;
+    
+    section {
         padding: 3%;
     }
-    #contact{
+    
+    #contact {
         margin-top: 1rem;
+    }
+    
+    .contact-info-container p {
+        font-size: 0.9rem;
+    }
+    
+    .home-pic, .about-pic {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .title {
+        font-size: 2.2rem;
     }
 }
 
-@media(prefers-reduced-motion) {
-    .section__text{
+/* Small Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    .home-pic, .about-pic {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .title {
+        font-size: 2rem;
+    }
+    
+    .section__text__p1 {
+        font-size: 1rem;
+    }
+    
+    .work img {
+        height: 250px;
+    }
+    
+    .layer h3 {
+        font-size: 1rem;
+    }
+    
+    footer p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    .contact-info-upper-container {
+        width: 90%;
+    }
+    
+    .contact-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Landscape Orientation */
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    #profile {
+        height: auto;
+        padding-bottom: 5rem;
+    }
+    
+    section {
+        height: auto;
+        padding-bottom: 3rem;
+    }
+    
+    .home-pic {
+        margin: 2rem auto;
+    }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion) {
+    .section__text {
         transition: none;
+    }
+    
+    .work img {
+        transition: none;
+    }
+    
+    .layer {
+        transition: none;
+    }
+}
+
+/* High DPI Displays */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+    /* Optional: Add styles for high DPI displays */
+    .icon {
+        background-size: contain;
     }
 }
